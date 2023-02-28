@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class ve id kavramları</title>
+    <!-- 
+        class'a erişmek için .classadi{} kullanılır
+        id'ye erişmek için #idadi{} kullanılır
+        1 class birden fazla yerde kullanılabilir ancak
+        1 id birden fazla yerde kullanılamaz.
+    -->
+    <style>
+        .ogrenci{
+            font-size: 20px;
+        }
+        #bilgi{
+            background-color:aqua ;
+        }
+        #ders{
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="ogrenci" id="bilgi">
+        <h1>Öğrenci Bilgileri</h1>
+        <p>Adı = Hasan Onur</p>
+        <p>Yaşı = 27</p>
+        <p>Bölümü = EEE</p>
+    </div>
+    <br>
+    <div class="ogrenci" id="ders">
+        <h1>Öğrencinin Dersleri</h1>
+        <ol>
+            <li>Html Programlama</li>
+            <li>Css Programlama</li>
+            <li>JS Programlama</li>
+        </ol>
+    </div>
+</body>
+</html>

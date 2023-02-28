@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Elemanları</title>
+</head>
+<body style="background-color: bisque;">
+    <!-- form actionuna atadığımız sayfa ile submit butonuna tıklanınca kullanıcının
+    yönlendirileceği sayfa belirlenmiş olur-->
+    <form action="bilgi.html">
+        <fieldset style="border: 10px solid blueviolet">
+            <!-- legend fieldsetin başlık kısmıdır-->
+            <legend style="font-weight: bold;">Form Input Elemanları</legend>
+            <table>
+                <tr>
+                    <td>Adı:</td>
+                    <td><input type="text" name="ad"></td>
+                </tr>
+                <tr>
+                    <td>Soyadı:</td>
+                    <td><input type="text" name="soyad"></td>
+                </tr>
+                <tr>
+                    <td>Email Adresi:</td>
+                    <td><input type="email"></td>
+                </tr>
+                <tr>
+                    <td>Şifre:</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td>Cinsiyet:</td>
+                    <td>
+                        <input type="radio" name="cinsiyet" value="Erkek">Erkek
+                        <input type="radio" name="cinsiyet" value="Kadın">Kadın
+                    </td>
+                </tr>
+                <tr>
+                    <td>Hobiler:</td>
+                    <td>
+                        <input type="checkbox" name="kitap" value="kitap">Kitap Okumak
+                        <input type="checkbox" name="müzik" value="müzik">Müzik Dinlemek
+                        <input type="checkbox" name="film" value="film">Film İzlemek
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <button type="submit">Gönder</button>
+                        <button type="button">Düzenle</button>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+        <hr>
+
+        <fieldset style="border: 10px solid aquamarine">
+            <legend style="font-weight: bold;">Diğer Form Elemanları</legend>
+            <table cellpadding="10px" cellspacing="10px">
+                <tr>
+                    <td>Programlama:</td>
+                    <td>
+                        <select name="yazilimdili" id="yazilimdili">
+                            <option value="Javascript">Javascript</option>
+                            <option value="Html">Html</option>
+                            <option value="Css">Css</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Datalist Kullanımı:</td>
+                    <td>
+                        <input list="tarayicilar">
+
+                        <datalist id="tarayicilar">
+
+                        <option value="Internet Explorer">
+
+                        <option value="Firefox">
+
+                        <option value="Opera">
+
+                        <option value="Safari">
+
+                        <option value="Chrome">
+
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Adres:</td>
+                    <td>
+                        <textarea name="adres" id="adres" cols="30" rows="10"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+
+
+    </form>
+</body>
+</html>
