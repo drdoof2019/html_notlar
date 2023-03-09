@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Css box-sizing kullanımı</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .kutu{
+            background-color: blueviolet;
+            width: 600px;
+            height: 300px;
+            padding-left: 100px;
+            padding-top: 20px;
+            
+        }
+        /*
+        Toplam:
+            Genişlik:700px
+            Yükseklik:320px
+        Box-sizing: border-box Toplam: 
+            Genişlik: 600px
+            Yükseklik: 300px
+            (ilk verdiğimiz değerlerde tuttuk, 
+            esnetmesine izin vermedi)
+            */
+    </style>
+</head>
+<body>
+    <div class="kutu">
+        KUTU
+    </div>
+</body>
+</html>
