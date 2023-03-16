@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .kutu{
+            background-color: teal;
+            padding: 30px;
+            flex: 25%;
+        }
+
+        .kutu1{
+            background-color: red;
+        }
+
+        .kutu2{
+            background-color: blue;
+        }
+
+        .kutu3{
+            background-color: green;
+        }
+
+        .kutu4{
+            background-color: yellow;
+        }
+
+        @media screen and (max-width:1000px){
+            .kutu{
+                background-color: teal;
+                padding: 30px;
+                flex: 50%;
+            }
+            .kutu1{
+            background-color: red;
+            }
+
+            .kutu2{
+                background-color: blue;
+            }
+
+            .kutu3{
+                background-color: green;
+            }
+
+            .kutu4{
+                background-color: yellow;
+            }
+        }
+
+        @media screen and (max-width:600px){
+            .kutu{
+                background-color: teal;
+                padding: 30px;
+                flex: 100%;
+            }
+            .kutu1{
+            background-color: red;
+            }
+
+            .kutu2{
+                background-color: blue;
+            }
+
+            .kutu3{
+                background-color: green;
+            }
+
+            .kutu4{
+                background-color: yellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h2>Responsive Flexbox ve Media Kullanımı</h2>
+    <div class="container">
+        <div class="kutu1 kutu">
+            KUTU1
+        </div>
+
+        <div class="kutu2 kutu">
+            KUTU2
+        </div>
+
+        <div class="kutu3 kutu">
+            KUTU3
+        </div>
+
+        <div class="kutu4 kutu">
+            KUTU4
+        </div>
+    </div>
+</body>
+</html>

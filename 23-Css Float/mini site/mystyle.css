@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: sandybrown;
+}
+
+.container{
+    background-color: sandybrown;
+    border: 1px solid red;
+    width: 900px;
+    height: 600px;
+    margin: auto; /*container'i ortaladık*/
+    margin-top: 10px;
+
+}
+
+.sidebar{
+    background-color: blueviolet;
+    float: left;
+    width: 200px;
+    height: 600px;
+}
+
+.sidebar ul{
+    padding: 10px;
+    list-style-type: none;
+}
+
+.sidebar ul li{
+    line-height: 60px;
+    background-color: violet;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+.sidebar ul li a:hover{
+    background-color: blue;
+    display: block;
+}
+
+.content{
+    background-color: cadetblue;
+    float: left;
+    margin-left: 20px;
+    width: 678px;
+    height: 600px;
+    padding: 20px;
+}
